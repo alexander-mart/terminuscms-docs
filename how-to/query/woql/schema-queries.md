@@ -38,11 +38,3 @@ The `@schema` denotes the default schema prefix, and makes it clear
 that this identifier lives in the schema name-space rather than the
 data name space.
 
-We can also use the typical `triple` word if we use `from` to set our
-default graph to `schema` instead of `instance`.
-
-```javascript
-let v = Vars("cls");
-from("schema")
-  .triple(v.cls, "rdf:type", "sys:Class")
-```
